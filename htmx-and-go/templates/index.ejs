@@ -8,11 +8,19 @@
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.7.0/dist/htmx.js"></script>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="mb-4">Organization Chart</h1>
-        <ol id="organizational-chart" hx-get="/organizational-chart">
-            <% include initial-structure.ejs %>
-        </ol>
+    <div class="wrapper bg-dark pb-3">
+        <div class="container">
+            <h1>Organization Chart</h1>
+            <ol class="organizational-chart">
+                <li>
+                    <div>
+                        <h2>CEO</h2>
+                        <button class="btn btn-success add-btn" hx-post="/addSubordinate">Add Subordinate</button>
+                    </div>
+                    <ol class="conditional-line"></ol>
+                </li>
+            </ol>
+        </div>
     </div>
 </body>
 </html>
