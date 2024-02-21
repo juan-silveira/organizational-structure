@@ -24,7 +24,7 @@ const data2 = {
                 {
                     id: 'Juan Silveira',
                     data: {
-                        department: 'General Manager',
+                        department: 'FrontEnd Development',
                         jobTitle: 'FrontEnd Developer',
                         name: 'Juan Silveira',
                         imageURL: 'https://media-gru2-1.cdn.whatsapp.net/v/t61.24694-24/164227712_1145271382934950_4358834584354374232_n.jpg?ccb=11-4&oh=01_AdS6Zu5n9do4XAPSAieve_DWCDxv678CkdSY8noF23JdXA&oe=65E33E81&_nc_sid=e6ed6c&_nc_cat=107',
