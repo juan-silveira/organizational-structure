@@ -5,12 +5,27 @@ document.addEventListener("DOMContentLoaded", function () {
     function addNewStructure(element) {
         const newStructure = document.createElement('li');
         newStructure.innerHTML = `
-            <div>
-                <h2>New Position</h2>
-                <button class="btn btn-success add-btn">Add Subordinate</button>
-                <button class="btn btn-danger delete-btn">Delete</button>
+        <div>
+            <h3>General Manager</h3>
+            <div class="row py-3">
+                <div class="col-3 text-end">
+                    <img class="rounded-circle" src="profile.svg" alt="profile" height="60" width="60">
+                </div>
+                <div class="col-7 text-start">
+                    <h4>CEO</h4>
+                    <h6>José Florido</h6>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <button class="btn btn-outline-success add-btn"><i class="ion ion-plus-round fs-3"></i></button>
+                    </div>
+                        <button class="btn btn-outline-danger delete-btn"><i class="ion ion-close-round fs-3"></i></button>
+                    <div>
+                    </div>
+                </div>
             </div>
-            <ol class="conditional-line"></ol>
+        </div>
+        <ol class="conditional-line"></ol>
         `;
         element.querySelector('ol').appendChild(newStructure);
         initializeButtons(newStructure);
@@ -36,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function initializeButtons(element) {
         const addButton = element.querySelector('.add-btn');
         const deleteButton = element.querySelector('.delete-btn');
-        
+
         if (addButton) {
             addButton.addEventListener('click', function () {
                 addNewStructure(element);

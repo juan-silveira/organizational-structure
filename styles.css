@@ -6,6 +6,14 @@
   display: block;
 }
 
+.add-btn {
+  transform: translate(-10px, -20px);
+}
+
+.delete-btn {
+  transform: translate(-10px, -10px);
+}
+
 ol.organizational-chart,
 ol.organizational-chart ol,
 ol.organizational-chart li,
@@ -94,8 +102,12 @@ ol.organizational-chart li>div {
 
 /*** PRIMARY ***/
 ol.organizational-chart>li>div {
-  background-color: #a2ed56;
+  /* background-color: #a2ed56; */
+  background-color: transparent;
+  border: 3px solid #eeecf3;
+  border-radius: 20px;
   margin-right: 1em;
+  max-width: 400px;
 }
 
 ol.organizational-chart>li>div:before {
@@ -135,22 +147,35 @@ ol.organizational-chart>li>ol:after {
 }
 
 ol.organizational-chart>li>ol>li>div {
-  background-color: #83e4e2;
+  /* background-color: #83e4e2; */
+  background-color: transparent;
+  border: 3px solid #eeecf3;
+  border-radius: 20px;
+  min-width: 400px;
 }
 
 /*** TERTIARY ***/
 ol.organizational-chart>li>ol>li>ol>li>div {
-  background-color: #fd6470;
+  /* background-color: #fd6470; */
+  background-color: transparent;
+  border: 3px solid #eeecf3;
+  border-radius: 20px;
 }
 
 /*** QUATERNARY ***/
 ol.organizational-chart>li>ol>li>ol>li>ol>li>div {
-  background-color: #fca858;
+  /* background-color: #fca858; */
+  background-color: transparent;
+  border: 3px solid #eeecf3;
+  border-radius: 20px;
 }
 
 /*** QUINARY ***/
 ol.organizational-chart>li>ol>li>ol>li>ol>li>ol>li>div {
-  background-color: #fddc32;
+  /* background-color: #fddc32; */
+  background-color: transparent;
+  border: 3px solid #eeecf3;
+  border-radius: 20px;
 }
 
 /*** MEDIA QUERIES ***/
